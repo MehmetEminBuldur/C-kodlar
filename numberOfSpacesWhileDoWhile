@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main(){
+	char ch;
+	int NOS=0;
+	// DO-WHILE VERSION
+	printf("Please write something :D keep it long\n");
+	do
+	{
+		ch=getchar();
+		if (ch==' ')
+			NOS++;	
+	}while (ch!='\n');
+	printf("Number of spaces(do-while):%d",NOS);
+	// WHILE-DO VERSION
+	NOS=0;
+	printf("\nPlease write something :D keep it long\n");
+	ch=getchar();
+	while (ch!='\n')	
+	{
+		if (ch==' ')
+			NOS++;
+			ch=getchar();
+	}
+	printf("Number of spaces(while-do):%d",NOS);
+	return 0;
+}
