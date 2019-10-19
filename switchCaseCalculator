@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(){
+	char h;
+	int x,y,z;
+	printf("Give first number:");
+	scanf("%d",&x);
+	printf("Give second number:");
+	scanf("%d",&y);
+	printf("Give a character(A,a=add--S,s=Subtract--M,m=multiply--D,d=divide)\n");
+	scanf("%s",&h);
+	
+	switch (h){
+		case 'a':
+		case 'A':z=x+y; printf("Add:%d",z); break;	
+		case 's':
+		case 'S':z=x-y; printf("Substract:%d",z); break;
+		case 'm':
+		case 'M':z=x*y; printf("Multiply:%d",z); break;
+		case 'd':
+		case 'D':z=x/y; printf("Divide:%d",z); break;
+		default : 		printf("Invalid operand"); 	
+	}
+}
