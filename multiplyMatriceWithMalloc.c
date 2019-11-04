@@ -1,7 +1,5 @@
 #include<stdio.h>
-
 int **matrisleriCarp(int**,int,int,int**,int,int);
-
 int main(){
 	int m,n,k,l,i,j;
 	int **mat1,**mat2,**mat3;
