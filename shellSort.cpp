@@ -9,16 +9,16 @@ int main(){
 		scanf("%d",&arr[i]);
 	}
 	for(mid=n/2;mid>0;mid=mid/2){ 
-        for(i=mid;i<n;i++){ 
-    		temp=arr[i];        
-            j=i;
+                for(i=mid;i<n;i++){ 
+    		       temp=arr[i];        
+                       j=i;
 			while(j>=mid&&arr[j-mid]>temp){
-                arr[j]=arr[j-mid]; 
-                j=j-mid;
-        	}
-            arr[j]=temp; 
-        } 
-    }
+                               arr[j]=arr[j-mid]; 
+                               j=j-mid;
+                       	}
+                        arr[j]=temp; 
+                 } 
+        }
 	for(i=0;i<n;i++){
 		printf(" %d ",arr[i]);
 	}
